@@ -33,18 +33,12 @@ A simple Todo List application built with **React** as the frontend and **Larave
    # Copy the .env
    cp .env.example .env
    # Make sure the database connection is set
-   DB_CONNECTION=mysql
-   ---
-   DB_HOST=127.0.0.1
-   ---
-   DB_PORT=3306
-   ---
-   DB_DATABASE=your_database_name
-   ---
-   DB_USERNAME=your_database_user
-   ---
-   DB_PASSWORD=your_database_password
-   ---
+   DB_CONNECTION=mysql\
+   DB_HOST=127.0.0.1\
+   DB_PORT=3306\ 
+   DB_DATABASE=your_database_name\
+   DB_USERNAME=your_database_user\
+   DB_PASSWORD=your_database_password\   
    # Run to migrate
    ```
    php artisan key:generate
@@ -52,12 +46,12 @@ A simple Todo List application built with **React** as the frontend and **Larave
    php artisan serve
    ```
 
-### Frontend Setup (React)
-```
+   # Frontend Setup (React)
+   ```
    cd todo
    npm install
-```
-## In App.jsx, ensure the API endpoint points to your Laravel backend:
+   ```
+   # In App.jsx, ensure the API endpoint points to your Laravel backend:
    axios.get("http://localhost:8000/api/fetch")
 
 
