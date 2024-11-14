@@ -51,8 +51,8 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
 
 Here are some screenshots of the Earthquake Mapper app:
 
-![Screenshot 1](lib/assets/1.jpg)
-![Screenshot 2](lib/assets/2.jpg)
+![Screenshot 1](assets/1.jpg)
+![Screenshot 2](assets/2.jpg)
 
 
 
