@@ -21,7 +21,7 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
    git clone https://github.com/Eshetu21/intern.git
    ```
    ```
-   cd api
+   cd laravel-backend
    ```
    ```
    composer install
@@ -44,7 +44,7 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
 
 ### Frontend Setup (React)
    ```
-   cd todo_flutter
+   cd flutter-todo
    flutter pub get
    ```
 ### Screenshots
