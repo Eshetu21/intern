@@ -1,3 +1,2 @@
-# todo_flutter
+# Todo using flutter
 
-A new Flutter project.
