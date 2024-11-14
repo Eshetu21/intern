@@ -24,7 +24,7 @@ class TodoRequest extends FormRequest
         return [
             "todo_title" => "required|string",
             "todo_description" => "required|string",
-            "todo_status" => "nullable|array",
+            "todo_status" => "nullable|boolean",
         ];
     }
 }

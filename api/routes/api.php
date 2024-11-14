@@ -15,4 +15,4 @@ Route::get("/test", function () {
 Route::get("/fetch", [TodoController::class, "fetchTodos"]);
 Route::post("/add", [TodoController::class, "addTodo"]);
 Route::put("/update/{id}", [TodoController::class, "updateTodo"]);
-Route::delete("/delete", [TodoController::class, "deleteTodo"]);
+Route::delete("/delete/{id}", [TodoController::class, "deleteTodo"]);

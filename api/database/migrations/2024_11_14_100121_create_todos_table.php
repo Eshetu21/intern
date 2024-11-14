@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string("todo_title");
             $table->string("todo_description");
-            $table->enum("status",["pending","completed"]);
+            $table->boolean('todo_status')->default(false);
             $table->timestamps();
         });
     }
