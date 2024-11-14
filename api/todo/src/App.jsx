@@ -1,4 +1,5 @@
-import  { useState } from "react";
+import React, { useState } from "react";
+import "./index.css";
 
 export default function App() {
   const [newItem, setNewItem] = useState("");
@@ -32,7 +33,7 @@ export default function App() {
     <div className="min-h-screen flex justify-center items-center bg-gray-100">
       <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
         <h1 className="text-2xl font-bold text-gray-800 text-center mb-5">
-          Todo Listl
+          Todo List
         </h1>
 
         <form onSubmit={handleSubmit} className="flex gap-3 mb-5">
