@@ -23,6 +23,7 @@ A simple Todo List application built with **React** as the frontend and **Larave
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Eshetu21/intern.git
+   ```
    cd api
    composer install
    cp .env.example .env
