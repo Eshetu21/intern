@@ -58,8 +58,8 @@ A simple Todo List application built with **React** as the frontend and **Larave
 
 Here are some screenshots of the Earthquake Mapper app:
 
-![Screenshot 1](todo/src/assets/1.png)
-![Screenshot 2](todo/src/assets/2.png)
+![Screenshot 1](react-frontend/src/assets/1.png)
+![Screenshot 2](react-frontend/src/assets/2.png)
 
 
 
