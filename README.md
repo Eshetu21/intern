@@ -33,12 +33,18 @@ A simple Todo List application built with **React** as the frontend and **Larave
    # Copy the .env
    cp .env.example .env
    # Make sure the database connection is set
-   DB_CONNECTION=mysql---
-   DB_HOST=127.0.0.1---
-   DB_PORT=3306---
-   DB_DATABASE=your_database_name---
-   DB_USERNAME=your_database_user---
-   DB_PASSWORD=your_database_password---
+   DB_CONNECTION=mysql
+   ---
+   DB_HOST=127.0.0.1
+   ---
+   DB_PORT=3306
+   ---
+   DB_DATABASE=your_database_name
+   ---
+   DB_USERNAME=your_database_user
+   ---
+   DB_PASSWORD=your_database_password
+   ---
    # Run to migrate
    ```
    php artisan key:generate
