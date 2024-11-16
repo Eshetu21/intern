@@ -51,7 +51,7 @@ A simple Todo List application built with **React** as the frontend and **Larave
    cd react-frontend
    npm install
    ```
-### In App.jsx, ensure the API endpoint points to your Laravel backend:
+### In App.jsx, ensure the API endpoint points to your Laravel backend look like this:
    axios.get("http://localhost:8000/api/fetch")
 
 ### Screenshots
