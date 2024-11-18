@@ -6,7 +6,6 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
 - **Add** new todos with a title and description.
 - **Update** existing todos.
 - **Delete** todos from the list.
-- **Toggle** todo status between **Pending** and **Completed**.
 
 ## Requirements
 - **Flutter**
