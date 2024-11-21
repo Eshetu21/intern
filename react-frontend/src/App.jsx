@@ -10,7 +10,7 @@ export default function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/fetch")
+      .get("http://192.168.23.180:80/api/fetch")
       .then((response) => setTodos(response.data.todos || []))
       .catch((error) => console.error("Error fetching todos:", error));
   }, []);
@@ -21,7 +21,7 @@ export default function App() {
 
     if (isUpdating) {
       axios
-        .put(`http://localhost:8000/api/update/${currentTodoId}`, {
+        .put(`http://192.168.23.180:80/api/update/${currentTodoId}`, {
           todo_title: newItem,
           todo_description: newDescription,
           todo_status: false,
@@ -40,7 +40,7 @@ export default function App() {
         .catch((error) => console.error("Error updating todo:", error));
     } else {
       axios
-        .post("http://localhost:8000/api/add", {
+        .post("http://192.168.23.180:80/api/add", {
           todo_title: newItem,
           todo_description: newDescription,
           todo_status: false,
@@ -56,7 +56,7 @@ export default function App() {
 
   function handleDelete(todoId) {
     axios
-      .delete(`http://localhost:8000/api/delete/${todoId}`)
+      .delete(`http://192.168.23.180:80/api/delete/${todoId}`)
       .then(() => {
         setTodos(todos.filter((todo) => todo.id !== todoId));
         if (isUpdating && currentTodoId === todoId) {
@@ -79,7 +79,7 @@ export default function App() {
   function toggleStatus(todo) {
     const updatedStatus = !todo.todo_status;
     axios
-      .put(`http://localhost:8000/api/update/${todo.id}`, {
+      .put(`http://192.168.23.180:80/api/update/${todo.id}`, {
         todo_title: todo.todo_title,
         todo_description: todo.todo_description,
         todo_status: updatedStatus,

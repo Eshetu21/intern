@@ -38,21 +38,29 @@ class TodoController extends Controller
             ], 422);
         }
     }
-    public function updateTodo(TodoRequest $request, $todoId)
+    public function updateTodo(Request $request, $todoId)
     {
-        $todo = Todo::where("id", $todoId)->first();
+        $todo = Todo::find($todoId);
+
         if (!$todo) {
             return response()->json(["message" => "Todo list not found"], 404);
         }
+
         try {
-            $validatedData = $request->validated();
+            $validatedData = $request->validate([
+                'todo_title' => 'nullable|string|max:255',
+                'todo_description' => 'nullable|string',
+            ]);
             $todo->update($validatedData);
+
             return response()->json([
-                "message" => "sucessfulFly updated",
+                "message" => "Successfully updated",
                 "todo" => $todo,
             ]);
-        } catch (Exception $e) {
-            return response()->json(["error" => $e]);
+        } catch (\Exception $e) {
+            return response()->json([
+                "error" => $e->getMessage()
+            ], 500);
         }
     }
     public function deleteTodo($todoId)
