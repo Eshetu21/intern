@@ -6,7 +6,6 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
 - **Add** new todos with a title and description.
 - **Update** existing todos.
 - **Delete** todos from the list.
-- **Toggle** todo status between **Pending** and **Completed**.
 
 ## Requirements
 - **Flutter**
@@ -21,7 +20,7 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
    git clone https://github.com/Eshetu21/intern.git
    ```
    ```
-   cd api
+   cd laravel-backend
    ```
    ```
    composer install
@@ -44,12 +43,12 @@ A simple Todo List application built with **Flutter** as the frontend and **Lara
 
 ### Frontend Setup (React)
    ```
-   cd todo_flutter
+   cd flutter-todo
    flutter pub get
    ```
 ### Screenshots
 
-Here are some screenshots of the Earthquake Mapper app:
+Here are some screenshots of the Todo app:
 
 <p align="center">
   <img src="assets/1.jpg" alt="Screenshot 1" width="200"/>

@@ -25,7 +25,7 @@ A simple Todo List application built with **React** as the frontend and **Larave
    git clone https://github.com/Eshetu21/intern.git
    ```
    ```
-   cd api
+   cd laravel-backend
    ```
    ```
    composer install
@@ -48,18 +48,18 @@ A simple Todo List application built with **React** as the frontend and **Larave
 
 ### Frontend Setup (React)
    ```
-   cd todo
+   cd react-frontend
    npm install
    ```
-### In App.jsx, ensure the API endpoint points to your Laravel backend:
+### In App.jsx, ensure the API endpoint points to your Laravel backend look like this:
    axios.get("http://localhost:8000/api/fetch")
 
 ### Screenshots
 
-Here are some screenshots of the Earthquake Mapper app:
+Here are some screenshots:
 
-![Screenshot 1](todo/src/assets/1.png)
-![Screenshot 2](todo/src/assets/2.png)
+![Screenshot 1](react-frontend/src/assets/1.png)
+![Screenshot 2](react-frontend/src/assets/2.png)
 
 
 
