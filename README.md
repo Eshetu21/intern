@@ -9,10 +9,10 @@ A simple Todo List application built with **React** as the frontend and **Larave
 - **Toggle** todo status between **Pending** and **Completed**.
 
 ## Requirements
-- **Node.js** (v14+)
+- **Node.js** 
 - **npm**
-- **Laravel** (v8+)
-- **PHP** (v7.4+)
+- **Laravel**
+- **PHP**
 - **Composer**
 - **MySQL** or another compatible database for Laravel
 
